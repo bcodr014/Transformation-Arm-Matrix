@@ -1,38 +1,39 @@
-syms axis;
+syms axis; %Number of axes in Robot
 syms theta1 theta2 theta3 theta4 theta5 theta6; 
 syms d1 d2 d3 d4 d5 d6;
 syms a1 a2 a3 a4 a5 a6;
 T = cell(5,1);
 
-% microbot alpha 2
-axis = 5;
-theta1 = 0;
-theta2 = 0;
-theta3 = 0;
-theta4 = -pi/2;
-theta5 = 0;
-theta6 = 0;
-
-alpha1 = -pi/2;
-alpha2 = 0;
-alpha3 = 0;
-alpha4 = -pi/2;
-alpha5 = 0;
-alpha6 = 0;
-
-d1 = 215.9; 
-d2 = 0; 
-d3 = 0; 
-d4 = 0; 
-d5 = 129.5;
-d6 = 0;
-
-a1 = 0; 
-a2 = 177.8; 
-a3 = 177.8; 
-a4 = 0; 
-a5 = 0;
-a6 = 0;
+% Uncomment any of the given robots to calculate the homogeneous tranformation matrix 
+% % microbot alpha 2 
+% axis = 5;
+% theta1 = 0;
+% theta2 = 0;
+% theta3 = 0;
+% theta4 = -pi/2;
+% theta5 = 0;
+% theta6 = 0;
+% 
+% alpha1 = -pi/2;
+% alpha2 = 0;
+% alpha3 = 0;
+% alpha4 = -pi/2;
+% alpha5 = 0;
+% alpha6 = 0;
+% 
+% d1 = 215.9; 
+% d2 = 0; 
+% d3 = 0; 
+% d4 = 0; 
+% d5 = 129.5;
+% d6 = 0;
+% 
+% a1 = 0; 
+% a2 = 177.8; 
+% a3 = 177.8; 
+% a4 = 0; 
+% a5 = 0;
+% a6 = 0;
 
 %RINO XR3
 % axis = 5;
@@ -42,7 +43,7 @@ a6 = 0;
 % theta4 = 0;
 % theta5 = -pi/2;
 % theta6 = 0;
-
+% 
 % alpha1 = -pi/2;
 % alpha2 = 0;
 % alpha3 = 0;
