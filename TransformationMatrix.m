@@ -2,7 +2,6 @@ syms axis; %Number of axes in Robot
 syms theta1 theta2 theta3 theta4 theta5 theta6; 
 syms d1 d2 d3 d4 d5 d6;
 syms a1 a2 a3 a4 a5 a6;
-T = cell(5,1);
 
 % Uncomment any of the given robots to calculate the homogeneous tranformation matrix 
 % % microbot alpha 2 
@@ -66,34 +65,34 @@ T = cell(5,1);
 % a6 = 0;
 
 % %ADEPT ONE
-% axis = 4;
-% theta1 = 0;
-% theta2 = 0;
-% theta3 = 100;
-% theta4 = pi/2;
-% theta5 = 0;
-% theta6 = 0;
-% 
-% alpha1 = pi;
-% alpha2 = 0;
-% alpha3 = 0;
-% alpha4 = 0;
-% alpha5 = 0;
-% alpha6 = 0;
-% 
-% d1 = 877; 
-% d2 = 0; 
-% d3 = 0; 
-% d4 = 0; 
-% d5 = 200;
-% d6 = 0;
-% 
-% a1 = 425; 
-% a2 = 375; 
-% a3 = 0; 
-% a4 = 0; 
-% a5 = 0;
-% a6 = 0;
+axis = 4;
+theta1 = 0;
+theta2 = 0;
+theta3 = 100;
+theta4 = pi/2;
+theta5 = 0;
+theta6 = 0;
+
+alpha1 = pi;
+alpha2 = 0;
+alpha3 = 0;
+alpha4 = 0;
+alpha5 = 0;
+alpha6 = 0;
+
+d1 = 877; 
+d2 = 0; 
+d3 = 0; 
+d4 = 0; 
+d5 = 200;
+d6 = 0;
+
+a1 = 425; 
+a2 = 375; 
+a3 = 0; 
+a4 = 0; 
+a5 = 0;
+a6 = 0;
 
 % %INTELLEDEX 660
 %  axis = 6;
@@ -124,6 +123,8 @@ T = cell(5,1);
 % a4 = 304.8; 
 % a5 = 0;
 % a6 = 0;
+
+T = cell(axis,1);
 
 
 theta = [theta1 theta2 theta3 theta4 theta5 theta6];
